@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!--
+    <script language="Javascript" type="text/javascript">
+        function createRequestObject() {
+            var tmpXmlHttpObject;
+            if (window.XMLHttpRequest) {
+                tmpXmlHttpObject = new XMLHttpRequest();
+            } else if (window.ActiveXObject) {
+                tmpXmlHttpObject = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            return tmpXmlHttpObject;
+        }
+        var
+            http = createRequestObject();
+
+        function makeGetRequest() {
+            id = document.frm.uid.value;
+            http.open('get', 'CheckUserid.py?uid=' + id);
+            http.onreadystatechange = processResponse;
+            http.send(null);
+        }
+
+        function processResponse() {
+            if (http.readyState ==
+                4) {
+                var response = http.responseText;
+                document.getElementById('mess').innerHTML = response;
+            }
+        }
+    </script>-->
+    <style>
+       
+        
+        table {
+            background-color: aliceblue;
+            padding: 12px;
+            background: powderblue;
+            border: 3px solid rgb(129, 195, 204);
+            box-shadow: 50px 50px 50px rgb(201, 231, 235);
+            width: 80%;
+            height: 30%;
+            margin-left: 0px;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        
+        mark {
+            background-color: hotpink;
+            color: navy;
+            padding: 10px;
+        }
+        
+        [type="submit"] {
+            background-color: green;
+            color: white;
+            padding: 12px 20px;
+            border: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 50%;
+            text-align: center;
+            margin-left: 90px;
+            font-weight: bolder;
+        }
+        
+        td {
+            font-weight: bolder;
+        }
+    </style>
+    <SCRIpt>
+        $(document).ready(function() {
+            $('#cpwd').keyup(function() {
+                var pwd = $('#pwd').val();
+                var cpwd = $('#cpwd').val();
+
+                if (cpwd != pwd) {
+                    $('#showErrorcPwd').html('**password are not matching')
+                    $('#showErrorcPwd').css('color', 'red');
+                    return false;
+                } else {
+                    $('#showErrorcPwd').html('');
+                    return true;
+                }
+            });
+        });
+    </SCRIpt>
+
+</head>
+
+<body>
+    <div class="container">
+        <br><br>
+        <h2>
+            <mark>User Registration Form</mark> </h2>
+        <hr>
+        <form name="frm" action="Register.py" method="post">
+            <table>
+                <tr>
+                    <td><br>UserID</td>
+                    <td><br><input type="text" name="userid" class="form-control"> <br></td>
+
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="pswd" id="pwd" class="form-control"><br></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password" name="cpswd" id="cpwd" class="form-control"><br></td>
+                </tr>
+                <tr>
+                    <td>UserName</td>
+                    <td><input type="text" name="usernm" class="form-control" autocomplete="off" required><br></td>
+                </tr>
+
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <input type="text" name="address" class="form-control ">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td><input type="tel" name="mobile" class="form-control"><br></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Register" class="form-control"><br></td>
+
+                </tr>
+            </table>
+
+        </form>
+        <br>
+        <a href="Index.html">Homepage</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+                                                                                                        * {
+                                                                                                            box-sizing: border-box;
+                                                                                                        }
+                                                                                                        
+                                                                                                        body {
+                                                                                                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                                                                                            margin: 15px 30px;
+                                                                                                            font-size: 17px;
+                                                                                                            padding: 8px;
+                                                                                                        }
+                                                                                                        
+                                                                                                        input[type="text"],
+                                                                                                        input[type="email"],
+                                                                                                        input[type="number"],
+                                                                                                        input[type="password"],
+                                                                                                        input[type="date"],
+                                                                                                        select,
+                                                                                                        textarea {
+                                                                                                            width: 100%;
+                                                                                                            padding: 12px;
+                                                                                                            border: 1px solid #ccc;
+                                                                                                            border-radius: 5px;
+                                                                                                            margin: 5px
+                                                                                                        }
+                                                                                                        
+                                                                                                        fieldset {
+                                                                                                            background-color: #ccc;
+                                                                                                            border: 1px solid #ccc;
+                                                                                                        }
+                                                                                                        
+                                                                                                        input[type="submit"] {
+                                                                                                            background-color: green;
+                                                                                                            color: white;
+                                                                                                            padding: 12px 20px;
+                                                                                                            border: 10px;
+                                                                                                            border-radius: 4px;
+                                                                                                            cursor: pointer;
+                                                                                                            width: 100%;
+                                                                                                        }
+                                                                                                        
+                                                                                                        .main_heading {
+                                                                                                            text-align: center;
+                                                                                                        }
+                                                                                                        
+                                                                                                        .container {
+                                                                                                            background-color: lightgray;
+                                                                                                            padding: 5px 15px 2px 20px;
+                                                                                                            border-radius: 10px;
+                                                                                                            border: 1px solid white;
+                                                                                                        }
