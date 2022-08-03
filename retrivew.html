@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=8.0">
+    <title>Search Mobile</title>
+    <style>
+        input[type="submit"] {
+            background-color: rgb(97, 223, 108);
+            border: 1px solid rgb(68, 179, 24);
+            color: azure;
+            width: 90%;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 10px;
+        }
+        
+        input[type="text"] {
+            padding: 10px;
+            background-color: rgb(149, 245, 149);
+            border: 1px solid rgb(61, 224, 61);
+            font-weight: 700;
+            cursor: text;
+            width: 280px;
+        }
+        
+        header {
+            background-color: rgb(124, 231, 124);
+            padding: 10px;
+            text-align: center;
+        }
+        
+        table {
+            border: 3px solid rgb(69, 214, 50);
+            box-shadow: 50px 50px 50px rgb(201, 231, 235);
+            width: 30%;
+            margin-left: 500px;
+            padding: 10px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Search A Mobile</h1>
+    </header>
+    <form action="retrivew.py">
+        <table>
+            <center>
+                <tr>
+                    <td><input type="text" name="search" required></td>
+                    <td><input type="submit" value="Search"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>(enter valid Mobile Name Ex:-Mi,Nokia,Samsung,etc......)</h4>
+                    </td>
+                </tr>
+            </center>
+
+        </table>
+    </form>
+</body>
+
+</html>

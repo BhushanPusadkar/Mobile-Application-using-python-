@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set new price</title>
+    <style>
+        input[type="submit"] {
+            background-color: green;
+            border: 1px solid black;
+            color: azure;
+            width: 50%;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 8px;
+            margin-left: 160px;
+        }
+        
+        input[type="text"],
+        input[type="number"] {
+            padding: 10px;
+            background-color: rgb(207, 236, 240);
+            border: 1px solid black;
+            font-weight: 700;
+            cursor: text;
+            width: 280px;
+        }
+        
+        header {
+            background-color: powderblue;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        table {
+            border: 3px solid rgb(129, 195, 204);
+            box-shadow: 50px 50px 50px rgb(201, 231, 235);
+            width: 30%;
+            margin-left: 500px;
+            padding: 10px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Update New Price of Mobile</h2>
+    </header>
+    <table>
+        <form action="update.py">
+            <tr>
+                <td style="font-weight: bolder;">Mobile Name : </td>
+                <td><input type="text" name="name" placeholder="enter Mobile name" required></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bolder;">Set New Price : </td>
+                <td><input type="number" name="price" placeholder="enter new price" required></td>
+            </tr><br><br>
+            <tr>
+                <td><input type="submit" value="Set"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>

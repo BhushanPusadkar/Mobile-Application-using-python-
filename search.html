@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        input[type="submit"] {
+            background-color: green;
+            border: 1px solid black;
+            color: azure;
+            width: 90%;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 8px;
+        }
+        
+        input[type="text"] {
+            padding: 10px;
+            background-color: rgb(207, 236, 240);
+            border: 1px solid black;
+            font-weight: 700;
+            cursor: text;
+            width: 280px;
+        }
+        
+        header {
+            background-color: powderblue;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        table {
+            border: 3px solid rgb(129, 195, 204);
+            box-shadow: 50px 50px 50px rgb(201, 231, 235);
+            width: 30%;
+            margin-left: 500px;
+            padding: 100px;
+            border-radius: 60px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Search A mobile</h1>
+    </header>
+    <form action="Search.py">
+        <table>
+            <center>
+                <tr>
+                    <td><input type="text" name="search" class="form-control" required></td>
+                    <td>
+                        <input type="submit" value="Search"></td>
+                </tr>
+
+            </center>
+
+        </table>
+    </form>
+</body>
+
+</html>
